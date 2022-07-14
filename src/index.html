@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-full">
+      <div class="tasks shadow bg-white">
+        <div class="p-1 text-gray border-b-1 flex justify-between items-center">
+          <h3>Today's Todo</h3>
+          <button class="flex items-center bg-white border-0"><span class="icon icon-reload"></span></button>
+        </div>
+        <form id="add-task">
+          <div class="p-1 text-gray border-b-1 flex justify-between items-center">
+            <input type="text" class="task-input" id="task-input" placeholder="Add to your list..." required />
+            <button class="flex items-center bg-white border-0" type="submit">
+              <span class="icon icon-enter"></span>
+            </button>
+          </div>
+        </form>
+        <ul id="list"></ul>
+        <div class="flex justify-center bg-light-gray">
+          <button class="p-1 text-gray border-0" id="btn-delete-done-tasks">Clear all completed</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
