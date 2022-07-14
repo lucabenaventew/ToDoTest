@@ -1,0 +1,51 @@
+{
+  "homepage": "https://github.com/lucabenaventew/ToDoTest",
+  "name": "ToDoTest",
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": [
+      "jest-localstorage-mock"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "To DO list for daily tasks",
+  "private": true,
+  "scripts": {
+    "test": "jest --coverage --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "webpack --mode development",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:lucabenaventew/ToDoTest.git"
+  },
+  "author": "Luca Benavente",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucabenaventew/ToDoTest/issues"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+    "css-loader": "^6.7.1",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
+    "jest-localstorage-mock": "^2.4.21",
+    "postcss": "^8.4.14",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "stream": "^0.0.2"
+  }
+}
