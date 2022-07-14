@@ -1,0 +1,79 @@
+// Flexbox
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+// Colors
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-light-yellow {
+  background-color: $light-yellow;
+}
+
+.bg-light-gray {
+  background-color: $gray-1;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+// Sizing
+
+.h-full {
+  height: $s-full;
+}
+
+.w-full {
+  width: $s-full;
+}
+
+.p-1 {
+  padding: $s-b1;
+}
+
+.mr-05 {
+  margin-right: $s-b05;
+}
+
+// Borders
+
+.border-0 {
+  border: none;
+}
+
+.border-b-1 {
+  border-bottom: $s-s1 solid $gray-7;
+}
+
+// Shadows
+
+.shadow {
+  box-shadow: 2px 20px 25px -5px rgb(1 1 2 / 20%), 0 10px 10px -6px rgb(1 1 2 / 20%);
+}
+
+// Text formating
+
+.del {
+  text-decoration: line-through;
+}

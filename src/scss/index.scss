@@ -1,0 +1,110 @@
+// Feel free to change the styles in this file as you wish.
+
+// Variables
+@import "./variables";
+@import "./checkbox";
+@import "./utilities";
+
+// Normalize
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+// General styling
+
+body {
+  font-family: sans-serif;
+  background: $gray-1;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  color: $black;
+}
+
+// Custom Styling
+
+.tasks {
+  width: 80vh;
+}
+
+.task {
+  transition: all 0.2s ease-in;
+  cursor: move;
+}
+
+.task.dragged {
+  background-color: #ffe !important;
+}
+
+@media screen and (min-width: 768px) {
+  .tasks {
+    width: 35vw;
+  }
+}
+
+.task-input {
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+}
+
+.task-text {
+  position: static !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  border: 0;
+  background-color: inherit;
+  color: inherit;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+}
+
+.icon:hover,
+.icon:focus {
+  filter: brightness(10%);
+}
+
+.icon-dots {
+  background-image: url("../icons/dots.svg");
+}
+
+.icon-reload {
+  background-image: url("../icons/reload.svg");
+}
+
+.icon-enter {
+  background-image: url("../icons/enter.svg");
+}
+
+.icon-delete {
+  background-image: url("../icons/delete.svg");
+}
